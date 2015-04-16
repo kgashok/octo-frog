@@ -7,29 +7,16 @@ static char buf[30];
 
 char* fizzBuzz(int val)
 {
+    // initialize static variable, it may contain something!
     memset(buf,0,sizeof(buf));
 
-    if (val % 3 == 0){
+    if (val % 3 == 0)
         strcpy(buf, "Fizz");
-        // return "Fizz";
-    }
-    if (val % 5 == 0) {
+    if (val % 5 == 0) 
         strcat(buf, "Buzz");
-        //return "Buzz";
-    }
     if (val % 3 != 0 && val % 5 != 0)
         sprintf(buf, "%d", val);
 
-    printf ("%s\n", buf);
     return buf;
-    
-    
+     
 }
-
-/*
-int answer(void)
-{
-    return 6 * 9;
-}
-
-*/
