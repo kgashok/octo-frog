@@ -1,4 +1,4 @@
-#include "hiker.h"
+#include "fizzbuzz.h"
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
