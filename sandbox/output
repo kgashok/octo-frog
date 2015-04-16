@@ -1,6 +1,4 @@
-hiker.c: In function 'answer':
-hiker.c:10:12: error: 'buffer' undeclared (first use in this function)
-     memset(buffer,0,sizeof(buffer));
-            ^
-hiker.c:10:12: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [test] Error 1
+./test
+Fizz
+Buzz
+All tests passed
