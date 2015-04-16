@@ -1,8 +1,18 @@
 #include "hiker.h"
 
+#include <stdio.h>
+
+static buf[30];
+
 char* answer(int val)
 {
-    return "Fizz";
+    if (val % 3 == 0)
+        return "Fizz";
+
+    sprintf(buf, "%d", val);
+    return buf;    
+    
+    
 }
 
 /*
