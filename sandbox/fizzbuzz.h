@@ -2,7 +2,7 @@
 #define FIZZ_INCLUDED
 
 //int answer(void);
-char* fizzbuzz(int);
+char* fizzBuzz(int);
 
 
 #endif
