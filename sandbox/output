@@ -1,6 +1,2 @@
-hiker.tests.c: In function 'life_the_universe_and_everything':
-hiker.tests.c:9:5: error: implicit declaration of function 'strcmp' [-Werror=implicit-function-declaration]
-     assert (strcmp(answer(3), "Fizz") == 0);
-     ^
-cc1: all warnings being treated as errors
-make: *** [test] Error 1
+./test
+All tests passed
