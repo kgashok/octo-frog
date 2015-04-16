@@ -19,6 +19,7 @@ char* answer(int val)
     if (val % 3 != 0 && val % 5 != 0)
         sprintf(buf, "%d", val);
 
+    printf ("%s", buf);
     return buf;
     
     
