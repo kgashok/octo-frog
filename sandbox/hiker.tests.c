@@ -4,7 +4,9 @@
 
 static void life_the_universe_and_everything(void)
 {
-  assert(answer() == 42);
+  //assert(answer() == 42);
+    assert (answer(3) == "Fizz");
+
 }
 
 int main(void)

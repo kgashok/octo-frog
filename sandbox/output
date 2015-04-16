@@ -1,3 +1,12 @@
-./test
-test: hiker.tests.c:7: life_the_universe_and_everything: Assertion `answer() == 42' failed.
-make: *** [test.output] Aborted
+hiker.c: In function 'answer':
+hiker.c:3:18: error: unused parameter 'val' [-Werror=unused-parameter]
+ char* answer(int val)
+                  ^
+cc1: all warnings being treated as errors
+In file included from hiker.tests.c:2:0:
+hiker.tests.c: In function 'life_the_universe_and_everything':
+hiker.tests.c:8:23: error: comparison with string literal results in unspecified behavior [-Werror=address]
+     assert (answer(3) == "Fizz");
+                       ^
+cc1: all warnings being treated as errors
+make: *** [test] Error 1
