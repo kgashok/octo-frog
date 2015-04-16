@@ -1,18 +1,25 @@
 #include "hiker.h"
 
 #include <stdio.h>
+#include <string.h>
 
 static char buf[30];
 
 char* answer(int val)
 {
-    if (val % 3 == 0)
-        return "Fizz";
-    if (val % 5 == 0)
-        return "Buzz";
 
-    sprintf(buf, "%d", val);
-    return buf;    
+    if (val % 3 == 0){
+        strcpy(buf, "Fizz");
+        // return "Fizz";
+    }
+    if (val % 5 == 0) {
+        strcat(buf, "Buzz");
+        //return "Buzz";
+    }
+    if (val % 3 != 0 && val % 5 != 0)
+        sprintf(buf, "%d", val);
+
+    return buf;
     
     
 }
