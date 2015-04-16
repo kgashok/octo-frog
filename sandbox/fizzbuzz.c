@@ -1,11 +1,11 @@
-#include "hiker.h"
+#include "fizzbuzz.h"
 
 #include <stdio.h>
 #include <string.h>
 
 static char buf[30];
 
-char* answer(int val)
+char* fizzBuzz(int val)
 {
     memset(buf,0,sizeof(buf));
 
