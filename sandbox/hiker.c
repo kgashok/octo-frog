@@ -7,6 +7,7 @@ static char buf[30];
 
 char* answer(int val)
 {
+    memset(buffer,0,sizeof(buffer));
 
     if (val % 3 == 0){
         strcpy(buf, "Fizz");
