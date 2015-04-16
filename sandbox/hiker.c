@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-static buf[30];
+static char buf[30];
 
 char* answer(int val)
 {

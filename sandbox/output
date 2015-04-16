@@ -1,24 +1,6 @@
-hiker.c:5:8: error: type defaults to 'int' in declaration of 'buf' [-Werror]
- static buf[30];
-        ^
-hiker.c: In function 'answer':
-hiker.c:12:5: error: passing argument 1 of 'sprintf' from incompatible pointer type [-Werror]
-     sprintf(buf, "%d", val);
-     ^
-In file included from /usr/include/features.h:371:0,
-                 from /usr/include/stdio.h:27,
-                 from hiker.c:3:
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:31:1: note: expected 'char * restrict' but argument is of type 'int *'
- __NTH (sprintf (char *__restrict __s, const char *__restrict __fmt, ...))
- ^
-hiker.c:13:5: error: return from incompatible pointer type [-Werror]
-     return buf;    
-     ^
-cc1: all warnings being treated as errors
-In file included from hiker.tests.c:2:0:
 hiker.tests.c: In function 'life_the_universe_and_everything':
-hiker.tests.c:8:23: error: comparison with string literal results in unspecified behavior [-Werror=address]
-     assert (answer(3) == "Fizz");
-                       ^
+hiker.tests.c:9:5: error: implicit declaration of function 'strcmp' [-Werror=implicit-function-declaration]
+     assert (strcmp(answer(3), "Fizz") == 0);
+     ^
 cc1: all warnings being treated as errors
 make: *** [test] Error 1
