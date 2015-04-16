@@ -6,11 +6,11 @@
 static void fizzbuzzTests(void)
 {
   //assert(answer() == 42);
-  //assert (answer(3) == "Fizz");
-    assert (strcmp(answer(3), "Fizz") == 0);
+  //assert (fizzBuzz(3) == "Fizz");
+    assert (strcmp(fizzBuzz(3), "Fizz") == 0);
 
-    assert (strcmp(answer(5), "Buzz") == 0);
-    assert (strcmp(answer(15), "FizzBuzz") == 0);
+    assert (strcmp(fizzBuzz(5), "Buzz") == 0);
+    assert (strcmp(fizzBuzz(15), "FizzBuzz") == 0);
 }
 
 int main(void)
