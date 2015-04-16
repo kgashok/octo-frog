@@ -1,0 +1,3 @@
+./test
+test: hiker.tests.c:7: life_the_universe_and_everything: Assertion `answer() == 42' failed.
+make: *** [test.output] Aborted
