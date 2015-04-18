@@ -15,4 +15,5 @@ int main(void)
     fizzbuzzTests();
     // green-traffic light pattern...
     puts("All tests passed");
+    return 0;
 }
