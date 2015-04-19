@@ -1,32 +1,3 @@
 ./test
-*** buffer overflow detected ***: ./test terminated
-======= Backtrace: =========
-/lib/x86_64-linux-gnu/libc.so.6(__fortify_fail+0x5c)[0x2b3d7c39f08c]
-/lib/x86_64-linux-gnu/libc.so.6(+0x111020)[0x2b3d7c39e020]
-/lib/x86_64-linux-gnu/libc.so.6(+0x10ff05)[0x2b3d7c39cf05]
-./test[0x40075b]
-./test[0x400844]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5)[0x2b3d7c2aede5]
-./test[0x400579]
-======= Memory map: ========
-00400000-00403000 r-xp 00000000 ca:01 2786578                            /sandbox/test
-00603000-00604000 r--p 00003000 ca:01 2786578                            /sandbox/test
-00604000-00605000 rw-p 00004000 ca:01 2786578                            /sandbox/test
-01796000-017b7000 rw-p 00000000 00:00 0                                  [heap]
-2b3d7c068000-2b3d7c08b000 r-xp 00000000 ca:01 796013                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/ld-2.17.so
-2b3d7c08b000-2b3d7c08e000 rw-p 00000000 00:00 0 
-2b3d7c28a000-2b3d7c28b000 r--p 00022000 ca:01 796013                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/ld-2.17.so
-2b3d7c28b000-2b3d7c28d000 rw-p 00023000 ca:01 796013                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/ld-2.17.so
-2b3d7c28d000-2b3d7c44a000 r-xp 00000000 ca:01 795929                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/libc-2.17.so
-2b3d7c44a000-2b3d7c64a000 ---p 001bd000 ca:01 795929                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/libc-2.17.so
-2b3d7c64a000-2b3d7c64e000 r--p 001bd000 ca:01 795929                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/libc-2.17.so
-2b3d7c64e000-2b3d7c650000 rw-p 001c1000 ca:01 795929                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/libc-2.17.so
-2b3d7c650000-2b3d7c658000 rw-p 00000000 00:00 0 
-2b3d7c658000-2b3d7c66d000 r-xp 00000000 ca:01 795952                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/libgcc_s.so.1
-2b3d7c66d000-2b3d7c86c000 ---p 00015000 ca:01 795952                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/libgcc_s.so.1
-2b3d7c86c000-2b3d7c86d000 r--p 00014000 ca:01 795952                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/libgcc_s.so.1
-2b3d7c86d000-2b3d7c86e000 rw-p 00015000 ca:01 795952                     /var/lib/docker/aufs/diff/9f676bd305a43a931a8d98b13e5840ffbebcd908370765373315926024c7c35e/lib/x86_64-linux-gnu/libgcc_s.so.1
-7fff4b06f000-7fff4b090000 rw-p 00000000 00:00 0                          [stack]
-7fff4b143000-7fff4b144000 r-xp 00000000 00:00 0                          [vdso]
-ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+test: fizzbuzz_tests.c:12: fizzbuzzTests: Assertion `__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (fizzBuzzSeq(3)) && __builtin_constant_p ("1, 2, Fizz") && (__s1_len = __builtin_strlen (fizzBuzzSeq(3)), __s2_len = __builtin_strlen ("1, 2, Fizz"), (!((size_t)(const void *)((fizzBuzzSeq(3)) + 1) - (size_t)(const void *)(fizzBuzzSeq(3)) == 1) || __s1_len >= 4) && (!((size_t)(const void *)(("1, 2, Fizz") + 1) - (size_t)(const void *)("1, 2, Fizz") == 1) || __s2_len >= 4)) ? __builtin_strcmp (fizzBuzzSeq(3), "1, 2, Fizz") : (__builtin_constant_p (fizzBuzzSeq(3)) && ((size_t)(const void *)((fizzBuzzSeq(3)) + 1) - (size_t)(const void *)(fizzBuzzSeq(3)) == 1) && (__s1_len = __builtin_strlen (fizzBuzzSeq(3)), __s1_len < 4) ? (__builtin_constant_p ("1, 2, Fizz") && ((size_t)(const void *)(("1, 2, Fizz") + 1) - (size_t)(const void *)("1, 2, Fizz") == 1) ? __builtin_strcmp (fizzBuzzSeq(3), "1, 2, Fizz") : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) ("1, 2, Fizz"); register int __result = (((const unsigned char *) (const char *) (fizzBuzzSeq(3)))[0] - __s2[0]); if (__s1_len > 0 && __result == 0) { __result = (((const unsigned char *) (const char *) (fizzBuzzSeq(3)))[1] - __s2[1]); if (__s1_len > 1 && __result == 0) { __result = (((const unsigned char *) (const char *) (fizzBuzzSeq(3)))[2] - __s2[2]); if (__s1_len > 2 && __result == 0) __result = (((const unsigned char *) (const char *) (fizzBuzzSeq(3)))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p ("1, 2, Fizz") && ((size_t)(const void *)(("1, 2, Fizz") + 1) - (size_t)(const void *)("1, 2, Fizz") == 1) && (__s2_len = __builtin_strlen ("1, 2, Fizz"), __s2_len < 4) ? (__builtin_constant_p (fizzBuzzSeq(3)) && ((size_t)(const void *)((fizzBuzzSeq(3)) + 1) - (size_t)(const void *)(fizzBuzzSeq(3)) == 1) ? __builtin_strcmp (fizzBuzzSeq(3), "1, 2, Fizz") : (__extension__ ({ const unsigned char *__s1 = (const unsigned char *) (const char *) (fizzBuzzSeq(3)); register int __result = __s1[0] - ((const unsigned char *) (const char *) ("1, 2, Fizz"))[0]; if (__s2_len > 0 && __result == 0) { __result = (__s1[1] - ((const unsigned char *) (const char *) ("1, 2, Fizz"))[1]); if (__s2_len > 1 && __result == 0) { __result = (__s1[2] - ((const unsigned char *) (const char *) ("1, 2, Fizz"))[2]); if (__s2_len > 2 && __result == 0) __result = (__s1[3] - ((const unsigned char *) (const char *) ("1, 2, Fizz"))[3]); } } __result; }))) : __builtin_strcmp (fizzBuzzSeq(3), "1, 2, Fizz")))); }) == 0' failed.
 make: *** [test.output] Aborted
