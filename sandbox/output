@@ -1,6 +1,9 @@
 fizzbuzz.c: In function 'fizzBuzzSeq':
+fizzbuzz.c:31:50: error: ordered comparison of pointer with integer zero [-Werror=extra]
+     for (int i = 1; i <= val, strcat(sbuf, ", ") >0 ; i++) {
+                                                  ^
 fizzbuzz.c:31:29: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
-     for (int i = 1; i <= val, strcat(sbuf, ", "); i++) {
+     for (int i = 1; i <= val, strcat(sbuf, ", ") >0 ; i++) {
                              ^
 cc1: all warnings being treated as errors
 make: *** [test] Error 1
