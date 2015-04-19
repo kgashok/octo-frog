@@ -11,7 +11,7 @@ char* fizzBuzz(int val)
     memset(buf,0,sizeof(buf));
 
     if (val % 3 == 0)
-        strcpy(buf, "Fizz");
+        strcat(buf, "Fizz");
     if (val % 5 == 0) 
         strcat(buf, "Buzz");
     if (strlen (buf) == 0)
