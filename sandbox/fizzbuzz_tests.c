@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char st16 = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, 10, 11, Fizz, 13, 14, FizzBuzz, 16";
+char*12 st16 = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, 10, 11, Fizz, 13, 14, FizzBuzz, 16";
 
 static void fizzbuzzTests(void)
 {
