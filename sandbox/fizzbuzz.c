@@ -28,8 +28,10 @@ char* fizzBuzzSeq(int val)
     memset(sbuf, 0, sizeof(buf));
     //printf ("%d", val);
 
-    for (int i = 1; i <= val, strcat(sbuf, ", ") >0 ; i++) {
+    for (int i = 1; i <= val; i++) {
         strcat(sbuf, fizzBuzz(i));
+        if (i != val)
+            strcat (sbuf, ", ");
         printf ("%s\n", sbuf);
 
     }
