@@ -31,6 +31,7 @@ char* fizzBuzzSeq(int val)
     for (int i = 0; i < val; strcat(buf, ", "), i++) {
         strcat(sbuf, fizzBuzz(i));
     }
+    printf ("%s\n", sbuf);
 
     return sbuf;
 }
