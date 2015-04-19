@@ -1,5 +1,6 @@
-./test
-1
-1, 2
-1, 2, Fizz
-All tests passed
+fizzbuzz.c: In function 'fizzBuzzSeq':
+fizzbuzz.c:31:29: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+     for (int i = 1; i <= val, strcat(sbuf, ", "); i++) {
+                             ^
+cc1: all warnings being treated as errors
+make: *** [test] Error 1
