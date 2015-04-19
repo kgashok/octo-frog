@@ -1,9 +1,3 @@
-fizzbuzz.c:24:13: error: conflicting types for 'buf'
- static char buf[1000];
-             ^
-fizzbuzz.c:6:13: note: previous declaration of 'buf' was here
- static char buf[30];
-             ^
 fizzbuzz.c:26:7: error: no previous prototype for 'fizzBuzzSeq' [-Werror=missing-prototypes]
  char* fizzBuzzSeq(int val)
        ^

@@ -21,12 +21,12 @@ char* fizzBuzz(int val)
      
 }
 
-static char buf[1000];
+static char sbuf[1000];
 
 char* fizzBuzzSeq(int val)
 {
-    memset(buf, 0, sizeof(buf));
+    memset(sbuf, 0, sizeof(buf));
 
-    return buf;
+    return sbuf;
 }
 
