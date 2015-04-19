@@ -14,7 +14,8 @@ char* fizzBuzz(int val)
         strcpy(buf, "Fizz");
     if (val % 5 == 0) 
         strcat(buf, "Buzz");
-    if (val % 3 != 0 && val % 5 != 0)
+    //if (val % 3 != 0 && val % 5 != 0)
+    if (strlen (buf) == 0)
         sprintf(buf, "%d", val);
 
     return buf;
