@@ -9,7 +9,7 @@ static void fizzbuzzTests(void)
     assert (strcmp(fizzBuzz(5),  "Buzz")     == 0);
     assert (strcmp(fizzBuzz(15), "FizzBuzz") == 0);
 
-    assert (strcmp(fizzBuzzSeq(3), "1, 2, Fizz, ") == 0);
+    assert (strcmp(fizzBuzzSeq(3), "1, 2, Fizz") == 0);
 
 }
 
