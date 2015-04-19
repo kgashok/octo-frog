@@ -3,6 +3,6 @@
 
 //int answer(void);
 char* fizzBuzz(int);
-
+char* fizzBuzzSeq(int);
 
 #endif
