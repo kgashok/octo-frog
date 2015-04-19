@@ -20,3 +20,13 @@ char* fizzBuzz(int val)
     return buf;
      
 }
+
+static char buf[1000];
+
+char* fizzBuzzSeq(int val)
+{
+    memset(buf, 0, sizeof(buf));
+
+    return buf;
+}
+

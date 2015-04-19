@@ -1,3 +1,17 @@
+fizzbuzz.c:24:13: error: conflicting types for 'buf'
+ static char buf[1000];
+             ^
+fizzbuzz.c:6:13: note: previous declaration of 'buf' was here
+ static char buf[30];
+             ^
+fizzbuzz.c:26:7: error: no previous prototype for 'fizzBuzzSeq' [-Werror=missing-prototypes]
+ char* fizzBuzzSeq(int val)
+       ^
+fizzbuzz.c: In function 'fizzBuzzSeq':
+fizzbuzz.c:26:23: error: unused parameter 'val' [-Werror=unused-parameter]
+ char* fizzBuzzSeq(int val)
+                       ^
+cc1: all warnings being treated as errors
 fizzbuzz_tests.c: In function 'fizzbuzzTests':
 fizzbuzz_tests.c:12:5: error: implicit declaration of function 'fizzBuzzSeq' [-Werror=implicit-function-declaration]
      assert (strcmp(fizzBuzzSeq(3), "1, 2, Fizz") == 0);
