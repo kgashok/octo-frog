@@ -1,10 +1,22 @@
-fizzbuzz_tests.c:6:6: error: expected identifier or '(' before numeric constant
- char*12 st16 = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, 10, 11, Fizz, 13, 14, FizzBuzz, 16";
-      ^
-In file included from fizzbuzz_tests.c:2:0:
-fizzbuzz_tests.c: In function 'fizzbuzzTests':
-fizzbuzz_tests.c:15:37: error: 'st16' undeclared (first use in this function)
-     assert (strcmp(fizzBuzzSeq(16), st16) == 0);
-                                     ^
-fizzbuzz_tests.c:15:37: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [test] Error 1
+./test
+test: fizzbuzz_tests.c:15: fizzbuzzTests: Assertion `__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (fizzBuzzSeq(16)) && __builtin_constant_p (st16) && (__s1_len = __builtin_strlen (fizzBuzzSeq(16)), __s2_len = __builtin_strlen (st16), (!((size_t)(const void *)((fizzBuzzSeq(16)) + 1) - (size_t)(const void *)(fizzBuzzSeq(16)) == 1) || __s1_len >= 4) && (!((size_t)(const void *)((st16) + 1) - (size_t)(const void *)(st16) == 1) || __s2_len >= 4)) ? __builtin_strcmp (fizzBuzzSeq(16), st16) : (__builtin_constant_p (fizzBuzzSeq(16)) && ((size_t)(const void *)((fizzBuzzSeq(16)) + 1) - (size_t)(const void *)(fizzBuzzSeq(16)) == 1) && (__s1_len = __builtin_strlen (fizzBuzzSeq(16)), __s1_len < 4) ? (__builtin_constant_p (st16) && ((size_t)(const void *)((st16) + 1) - (size_t)(const void *)(st16) == 1) ? __builtin_strcmp (fizzBuzzSeq(16), st16) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (st16); register int __result = (((const unsigned char *) (const char *) (fizzBuzzSeq(16)))[0] - __s2[0]); if (__s1_len > 0 && __result == 0) { __result = (((const unsigned char *) (const char *) (fizzBuzzSeq(16)))[1] - __s2[1]); if (__s1_len > 1 && __result == 0) { __result = (((const unsigned char *) (const char *) (fizzBuzzSeq(16)))[2] - __s2[2]); if (__s1_len > 2 && __result == 0) __result = (((const unsigned char *) (const char *) (fizzBuzzSeq(16)))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (st16) && ((size_t)(const void *)((st16) + 1) - (size_t)(const void *)(st16) == 1) && (__s2_len = __builtin_strlen (st16), __s2_len < 4) ? (__builtin_constant_p (fizzBuzzSeq(16)) && ((size_t)(const void *)((fizzBuzzSeq(16)) + 1) - (size_t)(const void *)(fizzBuzzSeq(16)) == 1) ? __builtin_strcmp (fizzBuzzSeq(16), st16) : (__extension__ ({ const unsigned char *__s1 = (const unsigned char *) (const char *) (fizzBuzzSeq(16)); register int __result = __s1[0] - ((const unsigned char *) (const char *) (st16))[0]; if (__s2_len > 0 && __result == 0) { __result = (__s1[1] - ((const unsigned char *) (const char *) (st16))[1]); if (__s2_len > 1 && __result == 0) { __result = (__s1[2] - ((const unsigned char *) (const char *) (st16))[2]); if (__s2_len > 2 && __result == 0) __result = (__s1[3] - ((const unsigned char *) (const char *) (st16))[3]); } } __result; }))) : __builtin_strcmp (fizzBuzzSeq(16), st16)))); }) == 0' failed.
+1, 
+1, 2, 
+1, 2, Fizz
+1, 
+1, 2, 
+1, 2, Fizz, 
+1, 2, Fizz, 4, 
+1, 2, Fizz, 4, Buzz, 
+1, 2, Fizz, 4, Buzz, Fizz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16
+make: *** [test.output] Aborted
