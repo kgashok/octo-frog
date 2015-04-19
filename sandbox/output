@@ -1,26 +1,6 @@
-fizzbuzz.c:26:7: error: no previous prototype for 'fizzBuzzSeq' [-Werror=missing-prototypes]
- char* fizzBuzzSeq(int val)
-       ^
 fizzbuzz.c: In function 'fizzBuzzSeq':
 fizzbuzz.c:26:23: error: unused parameter 'val' [-Werror=unused-parameter]
  char* fizzBuzzSeq(int val)
                        ^
-cc1: all warnings being treated as errors
-fizzbuzz_tests.c: In function 'fizzbuzzTests':
-fizzbuzz_tests.c:12:5: error: implicit declaration of function 'fizzBuzzSeq' [-Werror=implicit-function-declaration]
-     assert (strcmp(fizzBuzzSeq(3), "1, 2, Fizz") == 0);
-     ^
-fizzbuzz_tests.c:12:5: error: passing argument 1 of '__builtin_strlen' makes pointer from integer without a cast [-Werror]
-fizzbuzz_tests.c:12:5: note: expected 'const char *' but argument is of type 'int'
-fizzbuzz_tests.c:12:5: error: passing argument 1 of '__builtin_strcmp' makes pointer from integer without a cast [-Werror]
-fizzbuzz_tests.c:12:5: note: expected 'const char *' but argument is of type 'int'
-fizzbuzz_tests.c:12:5: error: passing argument 1 of '__builtin_strlen' makes pointer from integer without a cast [-Werror]
-fizzbuzz_tests.c:12:5: note: expected 'const char *' but argument is of type 'int'
-fizzbuzz_tests.c:12:5: error: passing argument 1 of '__builtin_strcmp' makes pointer from integer without a cast [-Werror]
-fizzbuzz_tests.c:12:5: note: expected 'const char *' but argument is of type 'int'
-fizzbuzz_tests.c:12:5: error: passing argument 1 of '__builtin_strcmp' makes pointer from integer without a cast [-Werror]
-fizzbuzz_tests.c:12:5: note: expected 'const char *' but argument is of type 'int'
-fizzbuzz_tests.c:12:5: error: passing argument 1 of '__builtin_strcmp' makes pointer from integer without a cast [-Werror]
-fizzbuzz_tests.c:12:5: note: expected 'const char *' but argument is of type 'int'
 cc1: all warnings being treated as errors
 make: *** [test] Error 1
