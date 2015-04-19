@@ -26,6 +26,7 @@ static char sbuf[1000];
 char* fizzBuzzSeq(int val)
 {
     memset(sbuf, 0, sizeof(buf));
+    val;
 
     return sbuf;
 }

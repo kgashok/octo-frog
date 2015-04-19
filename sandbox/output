@@ -1,6 +1,6 @@
 fizzbuzz.c: In function 'fizzBuzzSeq':
-fizzbuzz.c:26:23: error: unused parameter 'val' [-Werror=unused-parameter]
- char* fizzBuzzSeq(int val)
-                       ^
+fizzbuzz.c:29:5: error: statement with no effect [-Werror=unused-value]
+     val;
+     ^
 cc1: all warnings being treated as errors
 make: *** [test] Error 1
