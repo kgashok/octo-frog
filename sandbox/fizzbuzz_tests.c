@@ -41,6 +41,7 @@ static void fizzbuzzTests(void)
     assert_fizz("FizzBuzz", 15);
     assert_fizz_seq("1, 2, Fizz", 3);
 
+/*
     assert (strcmp(fizzBuzzSeq(3), "1, 2, Fizz") == 0);
     assert (strcmp(fizzBuzzSeq(16), st16) == 0);
 */

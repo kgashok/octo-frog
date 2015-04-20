@@ -1,5 +1,5 @@
-fizzbuzz_tests.c: In function 'fizzbuzzTests':
-fizzbuzz_tests.c:46:2: error: expected expression before '/' token
- */
-  ^
-make: *** [test] Error 1
+./test
+1, 
+1, 2, 
+1, 2, Fizz
+All tests passed
