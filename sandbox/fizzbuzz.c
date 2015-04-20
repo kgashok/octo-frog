@@ -34,10 +34,9 @@ const char* fizzBuzzSeq(char* sbuf, int val)
     for (int i = 1; i <= val; i++) {
         fizzBuzz (token, i);
         strcat(sbuf, token);
-        if (i != val)
-            strcat (sbuf, ", ");
-        printf ("%s\n", sbuf);
 
+        if (i != val) strcat (sbuf, ", ");
+        printf ("%s\n", sbuf);
     }
 
     return sbuf;
