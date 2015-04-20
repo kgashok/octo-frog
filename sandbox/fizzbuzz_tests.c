@@ -20,15 +20,26 @@ static void assert_fizz(const char * expected, int n)
     }
 }
 
+static void assert_fizz_seq(const char * expected, int n)
+{
+    char actual[1000] = { '\0' };
+    strcpy(actual, fizzBuzzSeq(n));
+    if (strcmp(expected, actual) != 0)
+    {
+        printf("fizzBuzzSeq(%d)\n", n);
+        printf("expected: \"%s\"\n", expected);
+        printf("  actual: \"%s\"\n", actual);
+        assert(false);
+    }
+}
+
+
 static void fizzbuzzTests(void)
 {
     assert_fizz("Fizz", 3);
     assert_fizz("Buzz", 5);
     assert_fizz("FizzBuzz", 15);
-
-/*    assert (strcmp(fizzBuzz(3),  "Fizz")     == 0);
-    assert (strcmp(fizzBuzz(5),  "Buzz")     == 0);
-    assert (strcmp(fizzBuzz(15), "FizzBuzz") == 0);
+    assert_fizz_seq("1, 2, Fizz", 3);
 
     assert (strcmp(fizzBuzzSeq(3), "1, 2, Fizz") == 0);
     assert (strcmp(fizzBuzzSeq(16), st16) == 0);
