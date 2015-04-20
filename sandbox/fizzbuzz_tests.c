@@ -5,8 +5,6 @@
 #include <stdbool.h>
 
 
-char* st16 = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16";
-
 static void assert_fizz(const char * expected, int n)
 {
     char actual[32] = { '\0' };
@@ -19,6 +17,8 @@ static void assert_fizz(const char * expected, int n)
         assert(false);
     }
 }
+
+const char* st16 = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16";
 
 static void assert_fizz_seq(const char * expected, int n)
 {
@@ -39,13 +39,9 @@ static void fizzbuzzTests(void)
     assert_fizz("Fizz", 3);
     assert_fizz("Buzz", 5);
     assert_fizz("FizzBuzz", 15);
-    assert_fizz_seq("1, 2, Fizz", 3);
 
-/*
-    assert (strcmp(fizzBuzzSeq(3), "1, 2, Fizz") == 0);
-    assert (strcmp(fizzBuzzSeq(16), st16) == 0);
-*/
-}
+    assert_fizz_seq("1, 2, Fizz", 3);
+    assert_fizz_seq(        st16, 16);
 
 int main(void)
 {
