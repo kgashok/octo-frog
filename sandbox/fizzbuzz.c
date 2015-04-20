@@ -5,7 +5,7 @@
 
 static char buf[30];
 
-char* fizzBuzz(int val)
+const char* fizzBuzz(int val)
 {
     // initialize static variable, it may contain something!
     memset(buf,0,sizeof(buf));
