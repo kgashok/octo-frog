@@ -1,7 +1,7 @@
 #ifndef FIZZ_INCLUDED
 #define FIZZ_INCLUDED
 
-const char* fizzBuzz(int);
-const char* fizzBuzzSeq(int);
+const char* fizzBuzz(char*, int);
+const char* fizzBuzzSeq(char*, int);
 
 #endif

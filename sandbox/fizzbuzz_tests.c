@@ -8,7 +8,8 @@
 static void assert_fizz(const char * expected, int n)
 {
     char actual[32] = { '\0' };
-    strcpy(actual, fizzBuzz(n));
+    fizzBuzz (actual, n);
+
     if (strcmp(expected, actual) != 0)
     {
         printf("fizzBuzz(%d)\n", n);
@@ -23,7 +24,8 @@ const char* st16 = "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 1
 static void assert_fizz_seq(const char * expected, int n)
 {
     char actual[1000] = { '\0' };
-    strcpy(actual, fizzBuzzSeq(n));
+    fizzBuzzSeq (actual, n);
+
     if (strcmp(expected, actual) != 0)
     {
         printf("fizzBuzzSeq(%d)\n", n);

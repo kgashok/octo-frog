@@ -7,13 +7,12 @@
 // not advisable, as it is not thread-safe
 // static char buf[30];
 
-const char* fizzBuzz(int val)
+const char* fizzBuzz(char* buf, int val)
 {
-    // initialize static variable, it may contain something!
     // memset(buf,0,sizeof(buf));
-    
+    //char* buf = malloc (30 * sizeof(char));
 
-    char* buf = malloc (30 * sizeof(char));
+    // initialize variable, it may contain something!
     buf[0] = '\0';
 
     if (val % 3 == 0)
@@ -29,10 +28,10 @@ const char* fizzBuzz(int val)
 
 // static char sbuf[1000];
 
-const char* fizzBuzzSeq(int val)
+const char* fizzBuzzSeq(char* sbuf, int val)
 {
     // memset(sbuf, 0, sizeof(buf));
-    char* sbuf = malloc (1000 * sizeof(char));
+    // char* sbuf = malloc (1000 * sizeof(char));
     sbuf[0] = '\0';
 
     for (int i = 1; i <= val; i++) {
