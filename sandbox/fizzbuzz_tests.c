@@ -23,6 +23,9 @@ static void assert_fizz(const char * expected, int n)
 static void fizzbuzzTests(void)
 {
     assert_fizz("Fizz", 3);
+    assert_fizz("Buzz", 5);
+    assert_fizz("FizzBuzz", 15);
+
 /*    assert (strcmp(fizzBuzz(3),  "Fizz")     == 0);
     assert (strcmp(fizzBuzz(5),  "Buzz")     == 0);
     assert (strcmp(fizzBuzz(15), "FizzBuzz") == 0);
