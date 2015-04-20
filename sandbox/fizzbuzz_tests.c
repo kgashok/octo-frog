@@ -33,11 +33,25 @@ static void assert_fizz_seq(const char * expected, int n)
     }
 }
 
+static void test_numbers_divisible_by_3 (void)
+{
+    assert_fizz("Fizz", 3);
+    assert_fizz("Fizz", 6);
+}
+
+static void test_numbers_divisible_by_5 (void)
+{
+    assert_fizz("Fizz", 5);
+    assert_fizz("Fizz", 10);
+    assert_fizz("Fizz", 20);
+
+}
 
 static void fizzbuzzTests(void)
 {
-    assert_fizz("Fizz", 3);
-    assert_fizz("Buzz", 5);
+    test_numbers_divisible_by_3();
+    test_numbers_divisible_by_5();
+
     assert_fizz("FizzBuzz", 15);
 
     assert_fizz_seq("1, 2, Fizz", 3);
