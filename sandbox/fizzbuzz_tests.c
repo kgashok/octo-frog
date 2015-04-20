@@ -41,11 +41,11 @@ static void test_numbers_divisible_by_3 (void)
 
 static void test_numbers_divisible_by_5 (void)
 {
-    assert_fizz("Fizz", 5);
-    assert_fizz("Fizz", 10);
-    assert_fizz("Fizz", 20);
-
+    assert_fizz("Buzz", 5);
+    assert_fizz("Buzz", 10);
+    assert_fizz("Buzz", 20);
 }
+
 
 static void fizzbuzzTests(void)
 {
