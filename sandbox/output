@@ -1,13 +1,21 @@
-fizzbuzz.c: In function 'fizzBuzz':
-fizzbuzz.c:13:5: error: implicit declaration of function 'malloc' [-Werror=implicit-function-declaration]
-     char* buf = malloc (30 * sizeof(char));
-     ^
-fizzbuzz.c:13:17: error: incompatible implicit declaration of built-in function 'malloc' [-Werror]
-     char* buf = malloc (30 * sizeof(char));
-                 ^
-fizzbuzz.c: In function 'fizzBuzzSeq':
-fizzbuzz.c:32:18: error: incompatible implicit declaration of built-in function 'malloc' [-Werror]
-     char* sbuf = malloc (1000 * sizeof(char));
-                  ^
-cc1: all warnings being treated as errors
-make: *** [test] Error 1
+./test
+1, 
+1, 2, 
+1, 2, Fizz
+1, 
+1, 2, 
+1, 2, Fizz, 
+1, 2, Fizz, 4, 
+1, 2, Fizz, 4, Buzz, 
+1, 2, Fizz, 4, Buzz, Fizz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16
+All tests passed
