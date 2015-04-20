@@ -23,7 +23,7 @@ const char* fizzBuzz(int val)
 
 static char sbuf[1000];
 
-char* fizzBuzzSeq(int val)
+const char* fizzBuzzSeq(int val)
 {
     memset(sbuf, 0, sizeof(buf));
 
