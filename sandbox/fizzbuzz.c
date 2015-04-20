@@ -32,10 +32,11 @@ const char* fizzBuzzSeq(char* sbuf, int val)
 {
     // memset(sbuf, 0, sizeof(buf));
     // char* sbuf = malloc (1000 * sizeof(char));
-    sbuf[0] = '\0';
+    sbuf[0]         = '\0';
+    char actual[32] = { '\0' };
 
     for (int i = 1; i <= val; i++) {
-        strcat(sbuf, fizzBuzz(i));
+        strcat(sbuf, fizzBuzz(actual, i));
         if (i != val)
             strcat (sbuf, ", ");
         printf ("%s\n", sbuf);
