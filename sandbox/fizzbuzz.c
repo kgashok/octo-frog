@@ -8,7 +8,8 @@ static char buf[30];
 const char* fizzBuzz(int val)
 {
     // initialize static variable, it may contain something!
-    memset(buf,0,sizeof(buf));
+    // memset(buf,0,sizeof(buf));
+    buf[0] = '\0';
 
     if (val % 3 == 0)
         strcat(buf, "Fizz");
