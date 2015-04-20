@@ -46,13 +46,19 @@ static void test_numbers_divisible_by_5 (void)
     assert_fizz("Buzz", 20);
 }
 
+static void test_numbers_divisible_by_3_and_5 (void)
+{
+    assert_fizz("FizzBuzz", 15);
+    assert_fizz("FizzBuzz", 105);
+}
+
+
 
 static void fizzbuzzTests(void)
 {
     test_numbers_divisible_by_3();
     test_numbers_divisible_by_5();
-
-    assert_fizz("FizzBuzz", 15);
+    test_numbers_divisible_by_3_and_5();
 
     assert_fizz_seq("1, 2, Fizz", 3);
     assert_fizz_seq(        st16, 16);
