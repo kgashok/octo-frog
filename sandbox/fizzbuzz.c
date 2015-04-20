@@ -9,9 +9,6 @@
 
 const char* fizzBuzz(char* buf, int val)
 {
-    // memset(buf,0,sizeof(buf));
-    //char* buf = malloc (30 * sizeof(char));
-
     // initialize variable, it may contain something!
     buf[0] = '\0';
 
@@ -30,13 +27,13 @@ const char* fizzBuzz(char* buf, int val)
 
 const char* fizzBuzzSeq(char* sbuf, int val)
 {
-    // memset(sbuf, 0, sizeof(buf));
-    // char* sbuf = malloc (1000 * sizeof(char));
+    // initialize the return string
     sbuf[0]         = '\0';
-    char actual[32] = { '\0' };
+    char token[32];
 
     for (int i = 1; i <= val; i++) {
-        strcat(sbuf, fizzBuzz(actual, i));
+        fizzBuzz (token, i);
+        strcat(sbuf, token);
         if (i != val)
             strcat (sbuf, ", ");
         printf ("%s\n", sbuf);
