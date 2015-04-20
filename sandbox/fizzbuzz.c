@@ -28,7 +28,7 @@ const char* fizzBuzz(char* buf, int val)
 const char* fizzBuzzSeq(char* sbuf, int val)
 {
     // initialize the return string
-    sbuf[0]         = '\0';
+    sbuf[0] = '\0';
     char token[32];
 
     for (int i = 1; i <= val; i++) {
