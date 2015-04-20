@@ -4,12 +4,14 @@
 #include <string.h>
 #include <stdlib.h>
 
+// not advisable, as it is not thread-safe
 // static char buf[30];
 
 const char* fizzBuzz(int val)
 {
     // initialize static variable, it may contain something!
     // memset(buf,0,sizeof(buf));
+    
 
     char* buf = malloc (30 * sizeof(char));
     buf[0] = '\0';
