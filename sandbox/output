@@ -1,21 +1,32 @@
-./test
-1, 
-1, 2, 
-1, 2, Fizz
-1, 
-1, 2, 
-1, 2, Fizz, 
-1, 2, Fizz, 4, 
-1, 2, Fizz, 4, Buzz, 
-1, 2, Fizz, 4, Buzz, Fizz, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 
-1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16
-All tests passed
+fizzbuzz.c: In function 'fizzBuzz':
+fizzbuzz.c:13:11: error: declaration of 'buf' shadows a global declaration [-Werror=shadow]
+     char* buf = malloc (30 * sizeof(char));
+           ^
+fizzbuzz.c:6:13: error: shadowed declaration is here [-Werror=shadow]
+ static char buf[30];
+             ^
+fizzbuzz.c:13:5: error: implicit declaration of function 'malloc' [-Werror=implicit-function-declaration]
+     char* buf = malloc (30 * sizeof(char));
+     ^
+fizzbuzz.c:13:17: error: incompatible implicit declaration of built-in function 'malloc' [-Werror]
+     char* buf = malloc (30 * sizeof(char));
+                 ^
+fizzbuzz.c: In function 'fizzBuzzSeq':
+fizzbuzz.c:32:11: error: declaration of 'sbuf' shadows a global declaration [-Werror=shadow]
+     char* sbuf = malloc (1000 * sizeof(char));
+           ^
+fizzbuzz.c:27:13: error: shadowed declaration is here [-Werror=shadow]
+ static char sbuf[1000];
+             ^
+fizzbuzz.c:32:18: error: incompatible implicit declaration of built-in function 'malloc' [-Werror]
+     char* sbuf = malloc (1000 * sizeof(char));
+                  ^
+fizzbuzz.c: At top level:
+fizzbuzz.c:6:13: error: 'buf' defined but not used [-Werror=unused-variable]
+ static char buf[30];
+             ^
+fizzbuzz.c:27:13: error: 'sbuf' defined but not used [-Werror=unused-variable]
+ static char sbuf[1000];
+             ^
+cc1: all warnings being treated as errors
+make: *** [test] Error 1
