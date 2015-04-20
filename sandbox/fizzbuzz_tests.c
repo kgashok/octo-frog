@@ -42,6 +42,8 @@ static void fizzbuzzTests(void)
 
     assert_fizz_seq("1, 2, Fizz", 3);
     assert_fizz_seq(        st16, 16);
+}
+
 
 int main(void)
 {
