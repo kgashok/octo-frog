@@ -1,7 +1,2 @@
-In file included from fizzbuzz_tests.c:2:0:
-fizzbuzz_tests.c: In function 'assert_fizz':
-fizzbuzz_tests.c:17:16: error: 'false' undeclared (first use in this function)
-         assert(false);
-                ^
-fizzbuzz_tests.c:17:16: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [test] Error 1
+./test
+All tests passed
