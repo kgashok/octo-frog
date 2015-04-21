@@ -31,7 +31,8 @@ const char* fizzBuzzSeq(char* sbuf, int val)
     sbuf[0] = '\0';
     char token[32];
 
-    for (int i = 1; i <= val; i++) {
+    int i;  // so Eclipse does not complain
+    for (i = 1; i <= val; i++) {
         fizzBuzz (token, i);
         strcat(sbuf, token);
 
